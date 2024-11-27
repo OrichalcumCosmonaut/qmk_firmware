@@ -106,6 +106,7 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
         }
     }
     // TODO: ideally this should actually be the tap-toggle state, not the current state
+    // TODO: this should depend on the dip-switch state too
     if (IS_LAYER_ON(MAC_FN) || IS_LAYER_ON(WIN_FN)) {
         RGB_MATRIX_INDICATOR_SET_COLOR(FN_LOCK_LED_INDEX, 255, 255, 255);
     } else {
